@@ -1,0 +1,3 @@
+/0001 {/type "allow" /url "/content/*"}
+/0002 {/type "deny" /url "/system/*"}
+/0003 {/type "deny" /url "/bin/*"}

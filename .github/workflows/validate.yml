@@ -1,0 +1,20 @@
+name: Dispatcher Rule Validation  # Workflow name
+
+on:
+  push:
+    branches: [main]              # Run on push to main branch
+  pull_request:
+    branches: [main]              # Run on pull requests
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest         # GitHub runner
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3   # Pulls code from GitHub
+
+      - name: Run dispatcher validation
+        run: |
+          chmod +x test_rules.sh     # Make shell script executable
+          ./test_rules.sh            # Run shell script
