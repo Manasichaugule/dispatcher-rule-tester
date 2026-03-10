@@ -21,12 +21,10 @@ Click latest workflow run-> job->Run dispatcher validation step
 Logs show which rules are blocked/allowed
 
 THEN CAN SEE THIS AS SHOWN BELOW:
-===============================
+
 Starting Dispatcher Rule Check
-===============================
 Deny rules found: 3
 /system path is blocked
-====================================
 Dispatcher rule validation Completed
-====================================
+
 
